@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css links -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <title>Js/Jq Practices</title>
+</head>
+<body>
+
+    <!-- JavaScript Practice Start -->
+    <section>
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <h1 class="text-success fw-bold " id="div1">Click the button to change the mood</h1>
+                <div class="col-lg-4">
+                    <button class="btn btn-dark" onclick="darkMood()">Dark Mood</button>
+                </div>
+                <div class="col-lg-4">
+                    <button class="btn btn-primary" onclick="lightMood()">Light Mood</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 my-5 text-center">
+                <h1 class="text-center text-danger fw-bold" id="div1">Click the buttom to change the image</h1>
+
+                <img class="img-fluid d-block m-auto mb-4" id="img" src="./imgs/img1.jpg" alt="" ">
+
+                <button type="button" class="btn btn-danger" onmouseover="imgOne()">Web Design</button>
+                <button type="button" class="btn btn-secondary" onmouseover="imgTwo()">Graphic Design</button>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- JavaScript Practice End -->
+    <!-- JavaScript Selector Start -->
+    <div class="container">
+        <h1 class="text-primary text-center fw-bold">JavaScript Selector Practice</h1>
+        <button type="button" class="btn btn-success" onclick="textChange()">Click Me</button>
+        <h1 id="text">Lorem ipsum dolor sit amet.</h1>
+    </div>
+
+    <div class="container  mt-5">
+        <button class="btn btn-secondary" onclick="alertMessage()">Show Alert</button>
+    </div>
+    <!-- JavaScript Selector End -->
+
+
+    <section>
+        <div class="container py-5">
+            <div class="wrapper text-center">
+                <h1 class="bg-gradient bg-info" id="h1">Change Text</h1>
+                <div class="change-text">
+                    <h2 id="h2">Hello World</h2>
+                    <button class="btn btn-warning" onclick="changeText()">Click me to change text</button>
+                    <button class="btn btn-danger" onclick="back()" >Click me to Refresh</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h1 class="text-center fw-bold" id="main-head">Change Text Color</h1>
+
+            <div class="wp2-color text-center ">
+                
+                <h2 id="sub-head">Welcome to SSb-358 batch</h2>
+                <p id="p-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. In facere nesciunt illum eum. Soluta quibusdam possimus aperiam laudantium, voluptates quisquam voluptate magni repellat ipsum repudiandae iusto illum sunt cumque minima ratione sapiente quis quam, placeat assumenda. Minima ad odio aut?</p>
+                <button type="button" class="btn btn-dark" onclick="changeColor()">Change text color</button>
+                <button type="button" class="btn btn-info" onclick="prevous()">Refresh</button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container py-4">
+            <div class="wrap text-center">
+                <h1 class="text-warning fw-bold text-center" id="div1">Click the button to show the column</h1>
+
+                <p id="col" class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis laboriosam tempore quasi blanditiis quae debitis quo ullam saepe eligendi inventore veniam, veritatis ut, incidunt earum architecto rem. Numquam qui eligendi optio dignissimos vero. Consequuntur deleniti commodi iste, amet sunt quibusdam?</p>
+                <button class="btn btn-outline-primary" onclick="creatColumn()">Click & Creat Column</button>
+                <button class="btn btn-outline-primary" onclick="refresh()">Refresh</button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container text-center py-5">
+            <h1 id="borderShow" id="div1">Click The Button To Show The Border</h1>
+            <button type="button" class="btn btn-outline-danger" onclick="showBorder()">Show Border</button>
+        </div>
+    </section>
+
+
+    <!-- light Bulb -->
+
+    <section>
+        <div class="container py-5">
+            <h1 class="text-danger fw-bold text-center">Click The Switch</h1>
+            <div class="wrapper-bulb text-center">
+                <img class="img-fluid d-block m-auto mb-5" src="./imgs/pic_bulboff.gif" alt="" id="img1">
+                <button type="button" class="btn btn-danger" onclick="onLight()">On Bulb</button>
+                <button type="button" class="btn btn-secondary" onclick="offLight()">Off Bulb</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- fan ghuraboi -->
+
+    <section>
+        <div class="container py-5">
+            <h1 class="text-danger fw-bold text-center" id="div1">Free Te Batash Khaiya Jan</h1>
+            <div class="wrapper-fan text-center">
+                <img class="img-fluid d-block m-auto" src="./imgs/fanoff.jpg" alt="" id="fanImg">
+                <button type="button" class="btn btn-success" onclick="onFan()">On Fan</button>
+                <button type="button" class="btn btn-danger" onclick="offFan()">Off Fan</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- submit form -->
+    <section>
+        <div class="container py-5">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-6">
+                    <form action="#" onsubmit="formSubmit()">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" placeholder="First name" onfocusout="formFocus()"><br><br>
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" placeholder="Last name">
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+  
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/custom.js"></script>
+</body>
+</html>
